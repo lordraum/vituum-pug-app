@@ -1,0 +1,14 @@
+{
+  "assets/logo.svg": {
+    "file": "assets/logo-0939fe3e.svg",
+    "src": "assets/logo.svg"
+  },
+  "styles/main.css": {
+    "css": [
+      "assets/main-9066a9fb.css"
+    ],
+    "file": "assets/main-0e4366e7.js",
+    "isEntry": true,
+    "src": "styles/main.css"
+  }
+}

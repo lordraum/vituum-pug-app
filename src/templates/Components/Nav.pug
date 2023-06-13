@@ -1,0 +1,5 @@
+ul(id="navigation")
+    each item in ['index', 'about', 'hello']           
+        li: a(href=`/${item != 'index' ? item :''}`)=item
+        
+            
