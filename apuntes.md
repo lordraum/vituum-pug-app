@@ -163,11 +163,6 @@ Código común a varias páginas
 
 `extends ../templates/template`
 
-- Instanciar templates con entorno vituum-pug
-
-`extends /templates/Layout/template.pug`
-
-
 ### Blocks
 
 Marcas que se definen en las plantillas, para que en las instancias se pueda añadir código en el lugar deseado.
@@ -185,5 +180,21 @@ header
     block header
 ```
 
+### Contenido por defecto
 
+- Se puede añadir contenido por defecto a un bloque
+    - block => salto, indebnt => contenido
+- Para añadir el contenido por defecto a la instancia se utiliza:
+    - Append => El conmtenido de la instancia se añade después del contenido por defecto.
+    - Preppend => El contenido se añade antes.    
+
+![append-prepend](./append-preppend.jpg)
+
+## Includes
+- Permite la modularización de código, importando fragmentos de código en los templates.
+- Crear una carpeta para los fragmentos => components, config, etc.
+- En los archivos de la carpeta /template/ es donde utilizaremos los `includes`
+- Se importan con `include` => ruta
+
+![include](./Include-01.jpg)
 
