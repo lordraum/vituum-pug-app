@@ -1,20 +1,15 @@
 doctype html
-html
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width")
-
-    // variables
-    - let name = 'Fer'
-    - 
-        let obj = {
-            key1 : 'asdfasd',
-            key2 : '2sdfasd'            
-        }
-
-    // fin variables
-
-    link(rel="stylesheet" href="/src/styles/main.css")
-body
-    h1= `Hola ${name}`
-    h2= name
-    p= `${obj.key1} y ${obj.key2}`
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        - let dato = false
+        
+    body
+        if dato 
+            p Se cumple la condición
+        else 
+            p No se cumple la condición
+        
+        p(class= dato ? 'active' : 'inactive') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente.

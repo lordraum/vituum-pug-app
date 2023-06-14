@@ -90,5 +90,24 @@ ul: li: a(href="") Estamos en una misma línea
             key2 : '2sdfasd'            
         }
 ```
+## Condicionales
 
-  
+- Se declaran con if + condición sin ()
+- Instrucción cond => Salto, indentación.
+- Igual para el else
+- Tambien se puede usar else if como en js
+
+```javascript
+if dato 
+    p Se cumple la condición
+else 
+    p No se cumple la condición
+```
+
+### Operador ternarios
+- Se usa para establecer atributos, clases y id's.
+- Hay que escribir las clases y id's como en html
+
+```javascript
+        p(class= dato ? 'active' : 'inactive') Lorem, ipsum dolor sit amet
+```
