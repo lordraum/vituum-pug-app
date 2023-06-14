@@ -154,3 +154,24 @@ each v, k in user
 each name, i in names
     p= `${i+1}: ${name}`
 ```
+
+## Templates
+Código común a varias páginas
+
+### Importar plantillas
+- extends => ruta
+
+`extends ../templates/template`
+
+###Blocks
+
+Marcas que se definen en las plantillas, para que en las instancias se pueda añadir código en el lugar deseado.
+
+Extends no érmite añadir código sin usar blocks o mixins.
+
+## Sintáxis
+
+- template => `block name`
+- instancia => `block name` => salto indentación => código
+
+
