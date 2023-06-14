@@ -1,4 +1,4 @@
 {
   "template": "templates/Layout/Main.pug",
-  "navigation": ["index"]
+  "navigation": ["index", "about", "hello"]
 }

@@ -163,7 +163,12 @@ Código común a varias páginas
 
 `extends ../templates/template`
 
-###Blocks
+- Instanciar templates con entorno vituum-pug
+
+`extends /templates/Layout/template.pug`
+
+
+### Blocks
 
 Marcas que se definen en las plantillas, para que en las instancias se pueda añadir código en el lugar deseado.
 
@@ -173,5 +178,12 @@ Extends no érmite añadir código sin usar blocks o mixins.
 
 - template => `block name`
 - instancia => `block name` => salto indentación => código
+- Si se quiere utilizar como bloque un elemento, como header, article, etc, el bloque debe ir dentro de la etiqueta.
+
+```js
+header
+    block header
+```
+
 
 
