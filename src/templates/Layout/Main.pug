@@ -7,9 +7,24 @@ html(lang="en")
         - let dato = false
         
     body
-        if dato 
-            p Se cumple la condición
+        - const names = ['David', 'Olga', 'Sebastián', 'Angela']
+
+        // - const names = []
+        -   
+            const user = {
+                id : 1,
+                user_name: 'David'
+            }
+
+        div
+        each name in names
+            p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
         else 
-            p No se cumple la condición
+            p= 'El array está vacio'
+
+        each v, k in user        
+            p= `la key es ${v} el value es ${k}`
         
-        p(class= dato ? 'active' : 'inactive') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente.
+        each name, i in names
+            p= `${i+1}: ${name}`
+            

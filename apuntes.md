@@ -111,3 +111,46 @@ else
 ```javascript
         p(class= dato ? 'active' : 'inactive') Lorem, ipsum dolor sit amet
 ```
+
+## Bucles
+
+- each => Funciona igual for in
+- each elm in iterable => salto, ind
+    - Instrucción
+- Cualquier código js es válido
+
+```javascript
+each name in names
+    // p= name
+    p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+```
+
+### Validación de array vacio
+
+- Utilizar else como en condicional
+    - No vacio => Se ejecuta la instrucción de each
+    - Vacio => Se ejecuta la instrucción del else
+
+```js
+each name in names
+    p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+else 
+    p= 'El array está vacio'
+```
+### Recorrer objetos
+
+- Se un 2do parámetro
+- Par 1 => Value
+- Par 2 => Key
+
+```js
+each v, k in user
+    p= `la key es ${k} el value es ${v}`
+```
+
+- El 2do parámetro también funciona con arrays, pero en este caso sería el índice.
+
+```js
+each name, i in names
+    p= `${i+1}: ${name}`
+```
