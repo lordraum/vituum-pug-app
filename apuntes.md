@@ -198,3 +198,19 @@ header
 
 ![include](./Include-01.jpg)
 
+## Mixins
+
+Funciones que permiten reutilizar código de pug.
+- Sintáxis => mixin function_name()
+    - Código pug.
+- Se importa con => `include`
+- Para usarlo se utiliza =>  `+mixin_name(...)` 
+
+
+![mixins 01](./mixins-01.jpg)
+
+![mixins 01](./mixins-02.jpg)
+
+![mixins 01](./mixins-03.jpg)
+
+![mixins 01](./mixins-04.jpg)
